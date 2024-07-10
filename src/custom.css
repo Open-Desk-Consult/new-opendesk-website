@@ -1,0 +1,68 @@
+html {
+  font-family: "Space Grotesk" !important;
+  @apply !bg-white;
+}
+body {
+  scroll-behavior: smooth;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.hide-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.css-dev-only-do-not-override-m79h4c.ant-menu-light,
+.css-dev-only-do-not-override-m79h4c.ant-menu-light > .ant-menu {
+  background: none !important;
+}
+
+.bgImg.with-background {
+  background-image: url("/public/cardImage.png");
+  background-repeat: no-repeat;
+  /* background-position-y: 100px; */
+  /* background-position-x: 100px; */
+  background-size: contain;
+  background-position: top center;
+  /* transform: rotate(90deg); */
+}
+.service-card > div:hover {
+  color: rgb(255, 255, 255) !important;
+}
+
+.footerImg {
+  background-image: url("/public/Opendesk.png");
+  background-repeat: no-repeat;
+  background-position-y: 190px;
+  background-size: contain;
+}
+.mobileFooter {
+  background-image: url("/public/Opendesk.png");
+  background-repeat: no-repeat;
+  background-position-y: 420px;
+  background-size: contain;
+}
+
+.b-bottom {
+  border-bottom: 1px solid white;
+}
+
+.main-nav.active {
+  border-bottom: 2px solid #e15b3b !important;
+  color: #e15b3b !important;
+}
+.mobile-nav.active {
+  border-bottom: 1px solid white;
+}
+
+.web-font {
+  font-family: "Space Grotesk" !important;
+}
