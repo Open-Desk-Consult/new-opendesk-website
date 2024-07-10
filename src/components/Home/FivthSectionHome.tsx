@@ -7,10 +7,10 @@ const FivthSectionHome = () => {
         <div className="!w-full !h-[631px]">
           <div className="w-full relative border h-full bg-[#FFECE7] !rounded-[28px] flex flex-col items-center justify-start bgImg">
             <div className="p-5 text-center !absolute">
-              <div className="font-medium text-[45px] h-[114px]">
+              <div className="font-medium text-[45px] h-[114px] text-left !px-8">
                 Ready to partner with our team to help your brand?
               </div>
-              <div className="mt-[80px]">
+              <div className="mt-[80px] text-left !px-8">
                 <CustomButton
                   btnText="Contact us"
                   color="primary"
@@ -18,13 +18,6 @@ const FivthSectionHome = () => {
                 />
               </div>
             </div>
-            {/* <div className="absolute top-[150px] !bottom-0 !left-0 !rounded-[28px]">
-              <img
-                src="/cardImage.png"
-                alt="card image"
-                className="rotate-[100deg] w-[550px]"
-              />
-            </div> */}
           </div>
         </div>
       </div>
@@ -44,7 +37,7 @@ const FivthSectionHome = () => {
                 />
               </div>
             </div>
-            <div className="absolute top-0 right-0 !rounded-[28px] bgImg">
+            <div className="absolute top-0 right-0 !rounded-[28px]">
               <img
                 src="/cardImage.png"
                 alt="card image"

@@ -25,18 +25,15 @@ body {
   background: none !important;
 }
 
-.bgImg.with-background {
-  background-image: url("/public/cardImage.png");
+.bgImg {
+  background-image: url("/public/orangeImage.png");
   background-repeat: no-repeat;
-  /* background-position-y: 100px; */
-  /* background-position-x: 100px; */
+  background-position-y: 380px;
   background-size: contain;
-  background-position: top center;
-  /* transform: rotate(90deg); */
 }
-.service-card > div:hover {
+/* .service-card > div:hover {
   color: rgb(255, 255, 255) !important;
-}
+} */
 
 .footerImg {
   background-image: url("/public/Opendesk.png");
