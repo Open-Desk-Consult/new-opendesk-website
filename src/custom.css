@@ -1,5 +1,5 @@
 html {
-  font-family: "Space Grotesk" !important;
+  font-family: "SpaceGrotesk" !important;
   @apply !bg-white;
 }
 body {
@@ -29,6 +29,13 @@ body {
   background-image: url("/public/orangeImage.png");
   background-repeat: no-repeat;
   background-position-y: 380px;
+  background-size: contain;
+}
+
+.bgImg-web {
+  background-image: url("/public/cardImage.png");
+  background-repeat: no-repeat;
+  background-position-x: 800px;
   background-size: contain;
 }
 /* .service-card > div:hover {
@@ -61,5 +68,5 @@ body {
 }
 
 .web-font {
-  font-family: "Space Grotesk" !important;
+  font-family: "SpaceGrotesk" !important;
 }

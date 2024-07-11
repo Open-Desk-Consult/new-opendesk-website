@@ -8,7 +8,7 @@ interface IProps {
 
 const ServiceCard = ({ title, icon, info, onClick, hasBtn = true }: IProps) => {
   const baseStyle =
-    "flex flex-col items-start justify-start gap-y-5 text-[#142A49] border border-gray-400 rounded-[40px] p-[30px] hover:bg-[#E15B3B] hover:border-[#E15B3B] hover:text-white hover:shadow-lg mt-5 service-card";
+    "flex flex-col items-start justify-start gap-y-5 text-[#142A49] border border-gray-400 rounded-[40px] p-[30px] hover:bg-[#E15B3B] hover:border-[#E15B3B] hover:text-white hover:!shadow-lg mt-5 service-card";
   const sizeStyle = hasBtn
     ? "max-w-[379.26px] max-h-[322.81px] lg:!w-[430px] lg:!h-[366px]"
     : "h-[335.81px] max-h-[350px] lg:h-[366px] lg:!max-h-[370px]";
@@ -21,7 +21,7 @@ const ServiceCard = ({ title, icon, info, onClick, hasBtn = true }: IProps) => {
         <img
           src={icon}
           alt="Service icon"
-          className="service-card hover:filter hover:brightness-0 hover:invert"
+          className="service-card hover:filter hover:brightness-0 hover:invert text-[#E15B3B]"
         />
       </div>
       <div className="font-medium text-[27px] leading-[27px] hover:text-white">

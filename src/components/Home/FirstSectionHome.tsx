@@ -3,11 +3,11 @@ const FirstSectionHome = () => {
   return (
     <>
       <div className="lg:hidden flex flex-col gap-y-3 !px-[16px] z-10 animate-fade-down animate-once animate-ease-in">
-        <div className="font-[700px] text-[40px] leading-[50px] web-font">
+        <div className="font-[700px] text-[40px] leading-[50px] !font-SpaceGrotesk">
           Devising digital solutions for smart brands to edge
         </div>
-        <div className="">
-          <div className="font-[400px] text-[15px] leading-[18px] text-left pr-3">
+        <div className="font-SpaceGrotesk">
+          <div className="font-[400px] text-[15px] leading-[18px] text-left pr-3 !font-SpaceGrotesk">
             we provide an operational range of cost effective, cutting edge
             solutions with instant visualisation to improve overall business
             performance
