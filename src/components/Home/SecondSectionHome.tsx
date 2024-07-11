@@ -42,7 +42,7 @@ const SecondSectionHome = () => {
         </div>
       </div>
       <div className="!mt-[100px] hidden lg:block">
-        <Carousel autoplay className="!mt-[150px] !h-[490px]">
+        <Carousel autoplay className="!mt-[150px] !h-[490px] !p-0">
           <div className="">
             <img src={cauroselImage} alt="Caroul image" className="w-full" />
           </div>
@@ -50,18 +50,17 @@ const SecondSectionHome = () => {
             <img src={cauroselImage} alt="Caroul image" className="w-full" />
           </div>
         </Carousel>
-
-        <div className="bg-[#F7F7F7] !px-[64px] !py-[50px] hiddem lg:flex items-center justify-between w-full mt-[-40px]">
-          <div className="font-bold text-xl leading-6 text-[#838080]">
-            50+ partnering clients:
-          </div>
-          <div className="flex items-center justify-center gap-x-6">
-            {imageArray.map((item) => (
-              <div>
-                <img key={item.key} src={item.image} alt="company image" />
-              </div>
-            ))}
-          </div>
+      </div>
+      <div className="bg-[#F7F7F7] !px-[64px] !py-[50px] hidden lg:flex items-center justify-between w-full mt-[45px]">
+        <div className="font-bold text-xl leading-6 text-[#838080]">
+          50+ partnering clients:
+        </div>
+        <div className="flex items-center justify-center gap-x-6">
+          {imageArray.map((item) => (
+            <div>
+              <img key={item.key} src={item.image} alt="company image" />
+            </div>
+          ))}
         </div>
       </div>
     </>

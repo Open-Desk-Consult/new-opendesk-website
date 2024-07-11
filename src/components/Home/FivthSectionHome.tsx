@@ -10,7 +10,7 @@ const FivthSectionHome = () => {
               <div className="font-medium text-[45px] h-[114px] text-left !px-8">
                 Ready to partner with our team to help your brand?
               </div>
-              <div className="mt-[80px] text-left !px-8">
+              <div className="mt-[110px] text-left !px-8">
                 <CustomButton
                   btnText="Contact us"
                   color="primary"

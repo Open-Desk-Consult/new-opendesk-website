@@ -2,12 +2,7 @@
 module.exports = {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {
-      fontFamily: {
-        SpaceGrotesk: ["SpaceGrotesk"],
-        // Add more custom font families as needed
-      },
-    },
+    extend: {},
   },
   plugins: [
     require("tailwindcss-animated"),

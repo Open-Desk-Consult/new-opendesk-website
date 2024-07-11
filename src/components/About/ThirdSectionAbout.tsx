@@ -8,7 +8,7 @@ const ThirdSectionAbout = () => {
           <div className="col-span-1 font-bold text-[25px] leading-[24px] text-[#E15B3B] lg:text-[35px] lg:leading-6">
             About us
           </div>
-          <div className="col-span-1 lg:col-span-3 font-normal text-base leading-[22px] lg:text-2xl lg:leading-[30px]">
+          <div className="col-span-1 mt-5 lg:col-span-3 font-normal text-base leading-[22px] lg:text-2xl lg:leading-[30px] pr-5">
             Open Desk is a top technology company specializing in app design,
             development, project management, UX engineering, and customer
             support. Our skilled team creates innovative, user-friendly
