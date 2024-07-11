@@ -3,7 +3,7 @@ const SecondSectionAbout = () => {
     <>
       <div className="mr-6 mt-6 lg:hidden">
         <img
-          src="/authentic-small-youthful-marketing-agency (2) 1.png"
+          src="/Team image.jpg"
           alt="Caroul image"
           className="w-full sm:!h-[250px] lg:h-full"
         />
@@ -11,7 +11,7 @@ const SecondSectionAbout = () => {
 
       <div className="mt-[100px] hidden lg:block w-full relative">
         <img
-          src="/authentic-small-youthful-marketing-agency (2) 1.png"
+          src="/Team image.jpg"
           alt="Caroul image"
           className="w-full h-[600px] !bg-contain"
         />
