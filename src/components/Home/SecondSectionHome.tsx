@@ -1,17 +1,12 @@
 import { Carousel } from "antd";
 import cauroselImage from "../../assets/images/Frame 8.jpg";
-import companyImage from "../../assets/Fictional company logo.svg";
-import companyImage1 from "../../assets/Fictional company logo2.svg";
-import companyImage2 from "../../assets/Fictional company logo3.svg";
-import companyImage3 from "../../assets/Fictional company logo4.svg";
-import companyImage4 from "../../assets/Fictional company logo5.svg";
 
 const imageArray = [
-  { key: "1", image: companyImage },
-  { key: "2", image: companyImage1 },
-  { key: "3", image: companyImage2 },
-  { key: "4", image: companyImage3 },
-  { key: "5", image: companyImage4 },
+  { key: "1", image: "/Fictional company logo.svg" },
+  { key: "2", image: "/Fictional company logo2.svg" },
+  { key: "3", image: "/Fictional company logo3.svg" },
+  { key: "4", image: "/Fictional company logo4.svg" },
+  { key: "5", image: "/Fictional company logo5.svg" },
 ];
 
 const SecondSectionHome = () => {
@@ -51,7 +46,7 @@ const SecondSectionHome = () => {
           </div>
         </Carousel>
       </div>
-      <div className="bg-[#F7F7F7] !px-[64px] !py-[50px] hidden lg:flex items-center justify-between w-full mt-[45px]">
+      <div className="bg-[#F7F7F7] !px-[64px] !py-[50px] hidden lg:flex items-center justify-between w-full mt-[20px]">
         <div className="font-bold text-xl leading-6 text-[#838080]">
           50+ partnering clients:
         </div>
