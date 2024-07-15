@@ -12,9 +12,9 @@ const FourthSectionHome = () => {
           Areas in which we provide our services
         </div>
       </div>
-      <div className="flex flex-col items-center justify-center gap-y-5 lg:grid lg:grid-cols-3 !w-screen lg:!px-[64px] lg:mt-[100px] lg:gap-x-4">
+      <div className="flex flex-col items-center justify-center gap-y-5 lg:grid lg:grid-cols-3 md:grid md:grid-cols-2 lg:!px-[64px] lg:mt-[100px] lg:gap-x-4">
         {services.map((service) => (
-          <div key={service.title}>
+          <div key={service.title} className="col-span-1">
             <ServiceCard
               // key={service.title}
               title={service.title}

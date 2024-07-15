@@ -1,48 +1,22 @@
 import { useState } from "react";
 import { Outlet } from "react-router-dom";
-// import type { MenuProps } from "antd";
 import { Drawer } from "antd";
 import opendeskImage from "../assets/openDeskIcon.svg";
-import cancelIcon from "../../public/xIcon.svg";
 import CustomButton from "../components/CustomButton";
 import { useNavigate } from "react-router-dom";
 import { useMobileView } from "../hook/useMobileView";
-import burgerMenuIcon from "../../public/burgermenuIcon.svg";
 import { NavLink } from "react-router-dom";
 import { navItems } from "../data";
-
-// type MenuItem = Required<MenuProps>["items"][number];
-// const items: MenuItem[] = [
-//   {
-//     label: "Home",
-//     key: "/",
-//   },
-
-//   {
-//     label: "About us",
-//     key: "/about-us",
-//   },
-//   {
-//     label: "Services",
-//     key: "/services",
-//   },
-// ];
+import Footer from "./Footer";
 
 const MainNavigation = () => {
-  // const [current, setCurrent] = useState("home");
   const [openMenu, setOpenMenu] = useState(false);
   const navigate = useNavigate();
 
   const isMobile = useMobileView();
 
-  // const onClick: MenuProps["onClick"] = (e) => {
-  //   navigate(e.key);
-  //   setCurrent(e.key);
-  // };
-
   const onClick = (link: string) => {
     navigate(link);
-    // setCurrent(link);
   };
 
   return (
@@ -68,23 +42,20 @@ const MainNavigation = () => {
                     {nav.label}
                   </NavLink>
                 ))}
-                {/* <Menu
-                  onClick={onClick}
-                  selectedKeys={[current]}
-                  mode="horizontal"
-                  items={items}
-                  className="!font-[500] !text-xl !leading-[25.52px] !text-black"
-                  defaultSelectedKeys={[current]}
-                /> */}
               </div>
               <div className="ml-5">
-                <CustomButton btnText="Contact us" onClick={() => {}} />
+                <CustomButton
+                  btnText="Contact us"
+                  onClick={() => {}}
+                  className="uppercase"
+                />
               </div>
             </div>
           </div>
 
           <div className="pt-[18px] w-screen h-screen overflow-y-scroll hide-scrollbar">
             <Outlet />
+            <Footer />
           </div>
         </div>
       ) : (
@@ -119,7 +90,7 @@ const MainNavigation = () => {
                   setOpenMenu(!openMenu);
                 }}
               >
-                <img src={cancelIcon} alt="cancel button" />
+                <img src="/xIcon.svg" alt="cancel button" />
               </button>
             </div>
           </Drawer>
@@ -139,13 +110,14 @@ const MainNavigation = () => {
                   setOpenMenu(!openMenu);
                 }}
               >
-                <img src={burgerMenuIcon} />
+                <img src="/burgermenuIcon.svg" />
               </button>
             </div>
           )}
 
-          <div className="pt-[18px] w-screen h-screen overflow-y-scroll hide-scrollbar">
+          <div className="pt-[18px] !w-screen !h-screen overflow-y-scroll hide-scrollbar">
             <Outlet />
+            <Footer />
           </div>
         </div>
       )}

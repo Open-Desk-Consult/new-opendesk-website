@@ -10,7 +10,7 @@ const ServiceCard = ({ title, icon, info, onClick, hasBtn = true }: IProps) => {
   const baseStyle =
     "flex flex-col items-start justify-start gap-y-5 text-[#142A49] border border-gray-400 rounded-[40px] p-[30px] hover:bg-[#E15B3B] hover:border-[#E15B3B] hover:text-white mt-5 service-card";
   const sizeStyle = hasBtn
-    ? "max-w-[500px] max-h-[370px] lg:!mx-auto lg:!h-[370px] lg:w-auto"
+    ? "max-w-[379.26px] max-h-[370px] lg:!mx-auto lg:!h-[370px] lg:w-auto"
     : "h-[335.81px] max-h-[350px] lg:h-[366px] lg:!max-h-[370px] w-full";
 
   const styleClass = `${baseStyle} ${sizeStyle}`;

@@ -16,7 +16,7 @@ const SecondSectionHome = () => {
         <img
           src={cauroselImage}
           alt="Caroul image"
-          className="w-full !h-[250px]"
+          className="w-full !max-h-[250px]"
         />
         <div className="bg-[#F7F7F7] !px-[30px] !py-[30px] flex flex-col items-center justify-center w-full">
           <div className="font-bold text-[12.6px] leading-[15.12px] text-[#838080]">
@@ -37,7 +37,7 @@ const SecondSectionHome = () => {
         </div>
       </div>
       <div className="!mt-[100px] hidden lg:block">
-        <Carousel autoplay className="!mt-[150px] !h-[490px] !p-0">
+        <Carousel autoplay className="!mt-[150px] !max-h-[490px] !p-0">
           <div className="">
             <img src={cauroselImage} alt="Caroul image" className="w-full" />
           </div>
@@ -46,7 +46,7 @@ const SecondSectionHome = () => {
           </div>
         </Carousel>
       </div>
-      <div className="bg-[#F7F7F7] !px-[64px] !py-[50px] hidden lg:flex items-center justify-between w-full mt-[20px]">
+      <div className="bg-[#F7F7F7] !px-[64px] !py-[50px] hidden lg:flex items-center justify-between w-full mt-[-20px]">
         <div className="font-bold text-xl leading-6 text-[#838080]">
           50+ partnering clients:
         </div>

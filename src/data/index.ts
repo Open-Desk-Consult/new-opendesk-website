@@ -69,10 +69,10 @@ export const navItems = [
     label: "About us",
     key: "/about-us",
   },
-  {
-    label: "Services",
-    key: "/services",
-  },
+  // {
+  //   label: "Services",
+  //   key: "/services",
+  // },
 ];
 
 export const socialsLogo = [

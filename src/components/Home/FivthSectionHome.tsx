@@ -4,13 +4,13 @@ const FivthSectionHome = () => {
   return (
     <>
       <div className="w-full !items-center !justify-center flex flex-col !mt-[150px] mb-4 lg:hidden">
-        <div className="!w-full !h-[631px]">
-          <div className="w-full relative border h-full bg-[#FFECE7] !rounded-[28px] flex flex-col items-center justify-start bgImg">
-            <div className="p-5 text-center !absolute">
-              <div className="font-medium text-[45px] h-[114px] text-left !px-8">
+        <div className="!w-full">
+          <div className="w-full relative border h-[631.54px] bg-[#FFECE7] !rounded-[28px] flex flex-col items-center justify-start bgImg">
+            <div className="px-6 mt-[60px] text-center w-auto">
+              <div className="font-medium text-[30px] h-[80px] text-left leading-[40.93px]">
                 Ready to partner with our team to help your brand?
               </div>
-              <div className="mt-[110px] text-left !px-8">
+              <div className="mt-[100px] text-left">
                 <CustomButton
                   btnText="Contact us"
                   color="primary"
