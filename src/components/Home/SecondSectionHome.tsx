@@ -12,7 +12,7 @@ const imageArray = [
 const SecondSectionHome = () => {
   return (
     <>
-      <div className="!mt-[60px] mr-6 lg:hidden">
+      <div className="!mt-[60px] lg:hidden">
         <img
           src={cauroselImage}
           alt="Caroul image"

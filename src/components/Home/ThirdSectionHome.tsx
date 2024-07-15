@@ -4,7 +4,7 @@ import CustomButton from "../CustomButton";
 const ThirdSectionHome = () => {
   return (
     <>
-      <div className="lg:hidden flex flex-col gap-y-4 !px-[16px] mr-6 mt-5">
+      <div className="lg:hidden flex flex-col gap-y-4 !px-[16px] lg:px-[64px] mr-6 mt-5">
         <div className="text-[25px] leading-[12.35px] font-bold text-[#CE5A3B] !text-left">
           About us
         </div>

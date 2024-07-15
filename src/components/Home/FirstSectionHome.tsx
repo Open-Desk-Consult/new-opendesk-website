@@ -2,7 +2,7 @@ import CustomButton from "../CustomButton";
 const FirstSectionHome = () => {
   return (
     <>
-      <div className="lg:hidden flex flex-col gap-y-3 !px-[16px] z-10 animate-fade-down animate-once animate-ease-in">
+      <div className="lg:hidden flex flex-col gap-y-3 z-10 animate-fade-down animate-once animate-ease-in px-[16px] lg:px-[64px]">
         <div className="font-[700px] text-[40px] leading-[50px]">
           Devising digital solutions for smart brands to edge
         </div>
