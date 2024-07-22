@@ -23,7 +23,7 @@ const MainNavigation = () => {
     <>
       {!isMobile ? (
         <div className="hidden lg:block">
-          <div className="!w-full flex items-center justify-between !pt-[18px] !px-[64px] z-50 fixed">
+          <div className="!w-full flex items-center justify-between !pt-[18px] !px-[64px] z-50 fixed bg-white py-4">
             <div>
               <img src={opendeskImage} alt="open desk image" />
             </div>

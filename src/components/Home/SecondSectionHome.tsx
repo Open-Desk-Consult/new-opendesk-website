@@ -39,10 +39,18 @@ const SecondSectionHome = () => {
       <div className="!mt-[100px] hidden lg:block">
         <Carousel autoplay className="!mt-[150px] !max-h-[490px] !p-0">
           <div className="">
-            <img src={cauroselImage} alt="Caroul image" className="w-full" />
+            <img
+              src={cauroselImage}
+              alt="Caroul image"
+              className="w-full !max-h-[490px]"
+            />
           </div>
           <div>
-            <img src={cauroselImage} alt="Caroul image" className="w-full" />
+            <img
+              src={cauroselImage}
+              alt="Caroul image"
+              className="w-full !max-h-[490px]"
+            />
           </div>
         </Carousel>
       </div>
