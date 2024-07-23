@@ -16,7 +16,7 @@ const SecondSectionHome = () => {
         <img
           src={cauroselImage}
           alt="Caroul image"
-          className="w-full !max-h-[250px]"
+          className="!w-full !max-h-[250px]"
         />
         <div className="bg-[#F7F7F7] !px-[30px] !py-[30px] flex flex-col items-center justify-center w-full">
           <div className="font-bold text-[12.6px] leading-[15.12px] text-[#838080]">

@@ -15,7 +15,7 @@ const Footer = () => {
                 <Link
                   to={nav.key}
                   key={nav.key}
-                  className="text-[20px] font-medium leading-[25px] text-white"
+                  className="text-[12px] font-medium leading-[16px] text-white"
                 >
                   {nav.label}
                 </Link>
@@ -24,18 +24,23 @@ const Footer = () => {
           </div>
         </div>
         <div className="flex flex-col items-start justify-start gap-y-8 !pt-7">
-          <div className="font-medium text-xl leading-[25px] text-[#FBFBFB]">
-            ©{new Date().getFullYear()} OpenDesk. All rights reserved
+          <div className="font-medium text-[12px] leading-[16px] text-[#FBFBFB]">
+            info@opendeskng.com
           </div>
+
           <div className="flex items-center justify-center gap-x-4">
             {socialsLogo.map((soc) => (
               <Link to={soc.path} key={soc.name}>
-                <img src={soc.logo} alt={soc.name} />
+                <img
+                  src={soc.logo}
+                  alt={soc.name}
+                  className="w-[23px] h-[23px]"
+                />
               </Link>
             ))}
           </div>
-          <div className="font-medium text-xl leading-[25px] text-[#FBFBFB]">
-            info@opendeskng.com
+          <div className="font-medium text-[12px] leading-[16px] text-[#FBFBFB]">
+            ©{new Date().getFullYear()} OpenDesk. All rights reserved
           </div>
         </div>
       </div>

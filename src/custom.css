@@ -4,11 +4,13 @@ html {
 }
 body {
   scroll-behavior: smooth;
-  box-sizing: border-box;
 }
 * {
   margin: 0;
   padding: 0;
+  /* box-sizing: border-box !important; */
+  /* overflow-x: hidden; */
+  /* overflow: hidden; */
 }
 
 .hide-scrollbar::-webkit-scrollbar {
@@ -52,7 +54,7 @@ body {
 .mobileFooter {
   background-image: url("/public/Opendesk.png");
   background-repeat: no-repeat;
-  background-position-y: 420px;
+  background-position-y: 400px;
   background-size: contain;
 }
 

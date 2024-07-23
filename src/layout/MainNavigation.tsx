@@ -96,7 +96,7 @@ const MainNavigation = () => {
           </Drawer>
 
           {!openMenu && (
-            <div className="!w-full flex items-center justify-between !px-[16px] !py-4 border rounded-[16.5px] border-gray-500">
+            <div className="!w-full flex items-center justify-between !px-[16px] !py-4 border rounded-[16.5px] border-gray-500 z-50 bg-white mr-[22px]">
               <div>
                 <img
                   src={opendeskImage}
@@ -115,7 +115,7 @@ const MainNavigation = () => {
             </div>
           )}
 
-          <div className="pt-[18px] !w-screen !h-screen overflow-y-scroll hide-scrollbar">
+          <div className="pt-[18px] !w-full !h-full overflow-scroll hide-scrollbar">
             <Outlet />
             <Footer />
           </div>

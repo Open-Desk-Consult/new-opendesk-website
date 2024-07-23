@@ -1,7 +1,7 @@
 const SecondSectionAbout = () => {
   return (
     <>
-      <div className="mr-6 mt-6 lg:hidden">
+      <div className="mt-6 lg:hidden">
         <img
           src="/Team image.jpg"
           alt="Caroul image"
