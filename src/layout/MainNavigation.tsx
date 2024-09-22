@@ -96,7 +96,7 @@ const MainNavigation = () => {
           </Drawer>
 
           {!openMenu && (
-            <div className="!w-full flex items-center justify-between !px-[16px] !py-4 border rounded-[16.5px] border-gray-500 z-50 bg-white mr-[22px]">
+            <div className="!w-full flex items-center justify-between !px-[16px] !py-4 border rounded-[16.5px] border-gray-500 bg-white mr-[22px]">
               <div>
                 <img
                   src={opendeskImage}

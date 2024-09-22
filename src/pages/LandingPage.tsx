@@ -1,17 +1,19 @@
 import FirstSectionHome from "../components/Home/FirstSectionHome";
-import FourthSectionHome from "../components/Home/FourthSectionHome";
-import SecondSectionHome from "../components/Home/SecondSectionHome";
-import ThirdSectionHome from "../components/Home/ThirdSectionHome";
-import FivthSectionHome from "../components/Home/FivthSectionHome";
+import OurServicesSectionHome from "../components/Home/OurServicesSectionHome";
+import CarouselSectionHome from "../components/Home/CarouselSection";
+import AboutUsSectionHome from "../components/Home/AboutUsSectionHome";
+import ContactUsSectionHome from "../components/Home/ContactUsSectionHome";
+import ProjectsSectionsHome from "../components/Home/ProjectsSectionsHome";
 
 const LandingPage = () => {
   return (
     <>
       <FirstSectionHome />
-      <SecondSectionHome />
-      <ThirdSectionHome />
-      <FourthSectionHome />
-      <FivthSectionHome />
+      <CarouselSectionHome />
+      <AboutUsSectionHome />
+      <OurServicesSectionHome />
+      <ProjectsSectionsHome />
+      <ContactUsSectionHome />
     </>
   );
 };

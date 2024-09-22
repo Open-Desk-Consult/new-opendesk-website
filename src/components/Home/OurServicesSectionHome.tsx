@@ -1,7 +1,7 @@
 import { services } from "../../data";
 import ServiceCard from "../ServiceCard";
 
-const FourthSectionHome = () => {
+const OurServicesSectionHome = () => {
   return (
     <>
       <div className="!w-full">
@@ -31,4 +31,4 @@ const FourthSectionHome = () => {
   );
 };
 
-export default FourthSectionHome;
+export default OurServicesSectionHome;

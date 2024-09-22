@@ -1,7 +1,7 @@
 import groupImage from "../../assets/GroupImage.png";
 import CustomButton from "../CustomButton";
 
-const ThirdSectionHome = () => {
+const AboutUsSectionHome = () => {
   return (
     <>
       <div className="lg:hidden flex flex-col gap-y-4 !px-[16px] lg:px-[64px] mr-6 mt-5">
@@ -59,4 +59,4 @@ const ThirdSectionHome = () => {
   );
 };
 
-export default ThirdSectionHome;
+export default AboutUsSectionHome;

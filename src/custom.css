@@ -73,3 +73,19 @@ body {
 .web-font {
   font-family: "Space Grotesk" !important;
 }
+
+.ant-collapse-content-box p {
+  @apply !text-white;
+}
+.ant-collapse-header-text {
+  @apply !text-white !text-[20px] lg:!text-[40px] !font-medium !leading-[50px];
+}
+.ant-collapse-item-active .ant-collapse-header {
+  @apply !bg-[#142A49];
+}
+.ant-collapse-header {
+  @apply bg-[#9eb9dfcc];
+}
+.ant-collapse {
+  @apply !rounded-lg;
+}

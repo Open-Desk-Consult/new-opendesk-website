@@ -1,6 +1,6 @@
 import CustomButton from "../CustomButton";
 
-const FivthSectionHome = () => {
+const ContactUsSectionHome = () => {
   return (
     <>
       <div className="w-full !items-center !justify-center flex flex-col !mt-[150px] mb-4 lg:hidden mr-[22px]">
@@ -44,4 +44,4 @@ const FivthSectionHome = () => {
   );
 };
 
-export default FivthSectionHome;
+export default ContactUsSectionHome;
