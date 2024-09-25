@@ -73,6 +73,12 @@ body {
 .web-font {
   font-family: "Space Grotesk" !important;
 }
+.service_card > *:hover {
+  @apply !bg-[#E15B3B] !text-[#fff] !border-[#E15B3B];
+}
+.service_card > img:hover {
+  @apply !text-[#fff];
+}
 
 .ant-collapse-content-box p {
   @apply !text-white;

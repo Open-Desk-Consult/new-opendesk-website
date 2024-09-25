@@ -14,9 +14,9 @@ const OurServicesSectionHome = () => {
             Areas in which we provide our services
           </div>
         </div>
-        <div className="grid grid-row items-center justify-center gap-y-5 lg:grid-cols-3 md:grid-cols-2 lg:!px-[64px] lg:mt-[100px] lg:gap-x-4">
+        <div className="grid grid-row gap-y-5 lg:grid-cols-3 md:grid-cols-2 lg:!px-[64px] lg:mt-[100px] lg:gap-x-4">
           {services.map((service) => (
-            <div key={service.title} className="col-span-1">
+            <div key={service.title} className="col-span-1 service_card">
               <ServiceCard
                 // key={service.title}
                 title={service.title}

@@ -4,7 +4,7 @@ import type { CollapseProps } from "antd";
 export const useAccordion = () => {
   const genExtra = (year: string) => (
     <>
-      <div className="flex justify-center items-center gap-x-3">
+      <div className="flex justify-center items-center gap-x-3 mt-3 lg:mt-0">
         <div className="w-10 border-b-[1px] border-white"></div>
         <div className=" text-[15px] lg:text-[30px] font-normal leading-[25px] lg:leading-[50px] text-white">
           {year}
@@ -16,7 +16,7 @@ export const useAccordion = () => {
   const items: CollapseProps["items"] = [
     {
       key: "1",
-      label: "01 zVerify",
+      label: "zVerify",
       extra: genExtra("2020"),
       children: (
         <AccordionContent
@@ -47,7 +47,7 @@ export const useAccordion = () => {
     },
     {
       key: "2",
-      label: "02 Baya",
+      label: "Baya",
       extra: genExtra("2023"),
       children: (
         <AccordionContent
@@ -59,7 +59,8 @@ export const useAccordion = () => {
         experience with a focus on quality, convenience, and excellence for all
         users.
       "
-          image="/Baya-login.png"
+          // image="/baya.svg"
+          image="/baya-1.png"
           details={[
             {
               title: "Project scope",
@@ -78,10 +79,13 @@ export const useAccordion = () => {
     },
     {
       key: "3",
-      label: "03 Nottie",
+      label: "Nottie",
       extra: genExtra("2021"),
+
       children: (
         <AccordionContent
+          // image="/nottie.svg"
+          image="/nottie-1.png"
           content="
         MICA is a cutting-edge mobile app for hailing cabs, delivering a premium
         experience for both riders and drivers. Riders enjoy seamless, luxurious
@@ -109,7 +113,7 @@ export const useAccordion = () => {
 
     {
       key: "4",
-      label: "04 Bubo",
+      label: "Bubo",
       extra: genExtra("2020"),
       children: (
         <AccordionContent

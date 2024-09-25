@@ -16,9 +16,9 @@ const ThirdSectionAbout = () => {
             digital presence with elegant and expertly implemented solutions
           </div>
         </div>
-        <div className="grid grid-row items-center justify-center lg:grid-cols-2 lg:gap-x-5 mt-[55px]">
+        <div className="grid grid-row lg:grid-cols-2 lg:gap-x-5 mt-[55px]">
           {aboutOpendesk.map((about) => (
-            <div key={about.title} className="col-span-1">
+            <div key={about.title} className="col-span-1 service_card">
               <ServiceCard
                 title={about.title}
                 info={about.info}
