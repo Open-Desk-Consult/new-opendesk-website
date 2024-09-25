@@ -7,13 +7,16 @@ import { ConfigProvider } from "antd";
 import { router } from "./routes";
 import { RouterProvider } from "react-router-dom";
 import { themeConfig } from "./theme.ts";
+import { HelmetProvider } from "react-helmet-async";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <StyleProvider hashPriority="high">
-      <ConfigProvider theme={themeConfig}>
-        <RouterProvider router={router} />
-      </ConfigProvider>
+      <HelmetProvider>
+        <ConfigProvider theme={themeConfig}>
+          <RouterProvider router={router} />
+        </ConfigProvider>
+      </HelmetProvider>
     </StyleProvider>
   </React.StrictMode>
 );

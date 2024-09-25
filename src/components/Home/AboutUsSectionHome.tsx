@@ -1,7 +1,9 @@
 import groupImage from "../../assets/GroupImage.png";
 import CustomButton from "../CustomButton";
+import { useCustomNavigation } from "../../hook/useCustomNavigation";
 
 const AboutUsSectionHome = () => {
+  const onClick = useCustomNavigation();
   return (
     <>
       <div className="lg:hidden flex flex-col gap-y-4 !px-[16px] lg:px-[64px] mr-6 mt-5">
@@ -24,7 +26,9 @@ const AboutUsSectionHome = () => {
         <CustomButton
           btnText="Know more?"
           color="secondary"
-          onClick={() => {}}
+          onClick={() => {
+            onClick("/about-us");
+          }}
           className="!mt-4"
         />
       </div>
@@ -47,7 +51,9 @@ const AboutUsSectionHome = () => {
           <CustomButton
             btnText="Know more?"
             color="secondary"
-            onClick={() => {}}
+            onClick={() => {
+              onClick("/about-us");
+            }}
             className="!mt-4"
           />
         </div>

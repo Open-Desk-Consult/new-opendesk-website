@@ -1,6 +1,8 @@
 import CustomButton from "../CustomButton";
+import { useCustomNavigation } from "../../hook/useCustomNavigation";
 
 const ContactUsSectionHome = () => {
+  const onClick = useCustomNavigation();
   return (
     <>
       <div className="w-full !items-center !justify-center flex flex-col !mt-[150px] mb-4 lg:hidden mr-[22px]">
@@ -14,7 +16,9 @@ const ContactUsSectionHome = () => {
                 <CustomButton
                   btnText="Contact us"
                   color="primary"
-                  onClick={() => {}}
+                  onClick={() => {
+                    onClick("/about-us");
+                  }}
                 />
               </div>
             </div>
@@ -33,7 +37,9 @@ const ContactUsSectionHome = () => {
                 <CustomButton
                   btnText="Contact us"
                   color="primary"
-                  onClick={() => {}}
+                  onClick={() => {
+                    onClick("/about-us");
+                  }}
                 />
               </div>
             </div>

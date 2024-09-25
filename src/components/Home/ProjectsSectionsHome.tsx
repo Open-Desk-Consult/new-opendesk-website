@@ -1,4 +1,4 @@
-import { Collapse, ConfigProvider } from "antd";
+import { Collapse } from "antd";
 import { useAccordion } from "../../hook/useAccordion";
 
 const ProjectsSectionsHome = () => {
@@ -14,24 +14,13 @@ const ProjectsSectionsHome = () => {
         </div>
       </div>
       <div className="!w-full mt-12">
-        <ConfigProvider
-          theme={{
-            token: {
-              fontFamily: "Space Grotesk",
-            },
-            components: {
-              Collapse: { contentBg: "#142A49", headerBg: "#142A49" },
-            },
-          }}
-        >
-          <Collapse
-            defaultActiveKey={["1"]}
-            onChange={() => {}}
-            items={items}
-            accordion
-            className="!rounded-lg"
-          />
-        </ConfigProvider>
+        <Collapse
+          defaultActiveKey={["1"]}
+          onChange={() => {}}
+          items={items}
+          accordion
+          className="!rounded-lg"
+        />
       </div>
     </>
   );

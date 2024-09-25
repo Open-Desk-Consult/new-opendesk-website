@@ -1,5 +1,7 @@
 import CustomButton from "../CustomButton";
+import { useCustomNavigation } from "../../hook/useCustomNavigation";
 const FirstSectionHome = () => {
+  const onClick = useCustomNavigation();
   return (
     <>
       <div className="lg:hidden flex flex-col gap-y-3 z-10 animate-fade-down animate-once animate-ease-in px-[16px] lg:px-[64px]">
@@ -14,7 +16,9 @@ const FirstSectionHome = () => {
           </div>
           <CustomButton
             btnText="Get started"
-            onClick={() => {}}
+            onClick={() => {
+              onClick("/about-us");
+            }}
             color="secondary"
             className="mt-5"
           />
@@ -33,7 +37,9 @@ const FirstSectionHome = () => {
           </div>
           <CustomButton
             btnText="Get started"
-            onClick={() => {}}
+            onClick={() => {
+              onClick("/about-us");
+            }}
             color="secondary"
             className="mt-5"
           />

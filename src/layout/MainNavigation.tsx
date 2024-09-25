@@ -3,21 +3,18 @@ import { Outlet } from "react-router-dom";
 import { Drawer } from "antd";
 import opendeskImage from "../assets/openDeskIcon.svg";
 import CustomButton from "../components/CustomButton";
-import { useNavigate } from "react-router-dom";
 import { useMobileView } from "../hook/useMobileView";
 import { NavLink } from "react-router-dom";
 import { navItems } from "../data";
 import Footer from "./Footer";
+import { useCustomNavigation } from "../hook/useCustomNavigation";
 
 const MainNavigation = () => {
   const [openMenu, setOpenMenu] = useState(false);
-  const navigate = useNavigate();
+
+  const onClick = useCustomNavigation();
 
   const isMobile = useMobileView();
-
-  const onClick = (link: string) => {
-    navigate(link);
-  };
 
   return (
     <>
@@ -46,7 +43,9 @@ const MainNavigation = () => {
               <div className="ml-5">
                 <CustomButton
                   btnText="Contact us"
-                  onClick={() => {}}
+                  onClick={() => {
+                    onClick("/about-us");
+                  }}
                   className="uppercase"
                 />
               </div>

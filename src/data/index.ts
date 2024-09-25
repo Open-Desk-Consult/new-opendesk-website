@@ -69,15 +69,15 @@ export const navItems = [
     label: "About us",
     key: "/about-us",
   },
-  // {
-  //   label: "Services",
-  //   key: "/services",
-  // },
 ];
 
 export const socialsLogo = [
   { name: "Twitter", logo: "/Twitterlogo.svg", path: "/" },
-  { name: "Facebook", logo: "/facebooklogo.svg", path: "/" },
-  { name: "Instagram", logo: "/instagramlogo.svg", path: "/" },
-  { name: "LinkedIn", logo: "/LinkedInlogo.svg", path: "/" },
+  // { name: "Facebook", logo: "/facebooklogo.svg", path: "/" },
+  // { name: "Instagram", logo: "/instagramlogo.svg", path: "/" },
+  {
+    name: "LinkedIn",
+    logo: "/LinkedInlogo.svg",
+    path: "https://www.linkedin.com/company/open-desk-consult-limited/",
+  },
 ];

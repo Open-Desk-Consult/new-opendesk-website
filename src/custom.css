@@ -29,14 +29,14 @@ body {
 }
 
 .bgImg {
-  background-image: url("/public/orangeImage.png");
+  background-image: url("/orangeImage.png");
   background-repeat: no-repeat;
   background-position-y: 380px;
   background-size: contain;
 }
 
 .bgImg-web {
-  background-image: url("/public/cardImage.png");
+  background-image: url("/cardImage.png");
   background-repeat: no-repeat;
   background-position-x: 800px;
   background-size: contain;
@@ -46,13 +46,13 @@ body {
 } */
 
 .footerImg {
-  background-image: url("/public/Opendesk.png");
+  background-image: url("/Opendesk.png");
   background-repeat: no-repeat;
   background-position-y: 190px;
   background-size: contain;
 }
 .mobileFooter {
-  background-image: url("/public/Opendesk.png");
+  background-image: url("/Opendesk.png");
   background-repeat: no-repeat;
   background-position-y: 400px;
   background-size: contain;
@@ -75,9 +75,6 @@ body {
 }
 .service_card > *:hover {
   @apply !bg-[#E15B3B] !text-[#fff] !border-[#E15B3B];
-}
-.service_card > img:hover {
-  @apply !text-[#fff];
 }
 
 .ant-collapse-content-box p {
