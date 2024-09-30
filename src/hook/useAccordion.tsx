@@ -21,12 +21,8 @@ export const useAccordion = () => {
       children: (
         <AccordionContent
           content="
-            MICA is a cutting-edge mobile app for hailing cabs, delivering a premium
-            experience for both riders and drivers. Riders enjoy seamless, luxurious
-            journeys, while drivers benefit from enhanced tools that streamline
-            operations and improve efficiency. MiCa redefines the cab-hailing
-            experience with a focus on quality, convenience, and excellence for all
-            users.
+            zVerify is a versatile OTP verification solution designed to provide businesses with secure, multi-channel authentication services. It features a comprehensive API for generating, verifying, and revoking OTPs, ensuring robust user security across SMS, voice calls, WhatsApp, RCS, and email. Additionally, zVerify offers an Admin Dashboard that enables businesses to monitor transactions, track OTP delivery, and analyze usage metrics in real-time.
+With its seamless integration and powerful monitoring capabilities, zVerify helps businesses enhance security, streamline customer interactions, and ensure a smooth verification experience.
           "
           image="/zVerify.png"
           details={[
@@ -37,7 +33,7 @@ export const useAccordion = () => {
             },
             {
               title: "Industry",
-              desc: "Transportation technology",
+              desc: "Business authentication service",
               icon: "/building-06.svg",
             },
           ]}
@@ -52,14 +48,23 @@ export const useAccordion = () => {
       children: (
         <AccordionContent
           content="
-        MICA is a cutting-edge mobile app for hailing cabs, delivering a premium
-        experience for both riders and drivers. Riders enjoy seamless, luxurious
-        journeys, while drivers benefit from enhanced tools that streamline
-        operations and improve efficiency. MiCa redefines the cab-hailing
-        experience with a focus on quality, convenience, and excellence for all
-        users.
+        Baya is an all-in-one estate management solution tailored for modern residential communities. It simplifies the management of estate dues, enables utility vending, facilitates visitor booking, and includes an SOS emergency feature for enhanced security. The solution is divided into three main components:
       "
-          // image="/baya.svg"
+          list={[
+            {
+              T: "Resident App",
+              des: "Empowers residents to manage their estate dues, buy utilities, book visitors, and access emergency services with ease.",
+            },
+            {
+              T: "Security Gate App",
+              des: "Optimizes security operations by providing a streamlined platform for visitor verification, gate passes, and real-time resident alerts.",
+            },
+            {
+              T: "Facility Manager's Dashboard",
+              des: "Centralizes estate management, offering tools for tracking payments, monitoring utility consumption, managing visitor logs, and handling resident communications.",
+            },
+          ]}
+          others="Together, Baya offers a cohesive platform that fosters efficient estate management and an improved living experience for all community members."
           image="/baya-1.png"
           details={[
             {
@@ -84,15 +89,10 @@ export const useAccordion = () => {
 
       children: (
         <AccordionContent
-          // image="/nottie.svg"
           image="/nottie-1.png"
           content="
-        MICA is a cutting-edge mobile app for hailing cabs, delivering a premium
-        experience for both riders and drivers. Riders enjoy seamless, luxurious
-        journeys, while drivers benefit from enhanced tools that streamline
-        operations and improve efficiency. MiCa redefines the cab-hailing
-        experience with a focus on quality, convenience, and excellence for all
-        users.
+        Nottie.net is an advanced transaction alert solution designed for financial institutions to provide real-time notifications and enhance customer engagement. It offers seamless integration with banking systems to generate transaction alerts and deliver them to customers through multiple channels, including SMS, email, WhatsApp, and other social media platforms.
+The solution includes an Analytic Dashboard that allows financial institutions to monitor alert delivery, track customer responses, and ensure optimal performance of the alert services. With Nottie.net, banks can maintain transparency, improve customer satisfaction, and ensure compliance with regulatory requirements for transaction notifications.
       "
           details={[
             {
@@ -102,7 +102,7 @@ export const useAccordion = () => {
             },
             {
               title: "Industry",
-              desc: "Transportation technology",
+              desc: "Transaction alert solution",
               icon: "/building-06.svg",
             },
           ]}
@@ -117,13 +117,10 @@ export const useAccordion = () => {
       extra: genExtra("2020"),
       children: (
         <AccordionContent
+          image="/Bubo_.png"
           content="
-        MICA is a cutting-edge mobile app for hailing cabs, delivering a premium
-        experience for both riders and drivers. Riders enjoy seamless, luxurious
-        journeys, while drivers benefit from enhanced tools that streamline
-        operations and improve efficiency. MiCa redefines the cab-hailing
-        experience with a focus on quality, convenience, and excellence for all
-        users.
+        Bubo is a comprehensive financial accounting solution designed to streamline business finance management. It offers a suite of features, including financial accounting, invoicing, taxation reporting, excess bank charge tracking, and bookkeeping. With Bubo, businesses can efficiently manage their financial operations, ensure compliance with tax regulations, and gain insights into their financial health.
+The solution is ideal for small to medium-sized enterprises looking to automate their accounting processes and optimize financial oversight with accurate reporting and easy-to-use tools.
       "
           details={[
             {
@@ -133,7 +130,7 @@ export const useAccordion = () => {
             },
             {
               title: "Industry",
-              desc: "Transportation technology",
+              desc: "Business finance management",
               icon: "/building-06.svg",
             },
           ]}

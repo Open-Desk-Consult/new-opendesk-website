@@ -4,8 +4,16 @@ interface IProps {
   heading?: string;
   image?: string;
   year?: string;
+  list?: { T: string; des: string }[];
+  others?: string;
 }
-const AccordionContent = ({ content, details, image }: IProps) => {
+const AccordionContent = ({
+  content,
+  details,
+  image,
+  others,
+  list,
+}: IProps) => {
   return (
     <>
       <div className="lg:hidden flex-col justify-between items-start">
@@ -13,12 +21,23 @@ const AccordionContent = ({ content, details, image }: IProps) => {
           <img
             src={image}
             alt="project image"
-            className="w-[327px] h-[172px] rounded-[20px]"
+            className="w-[327px] max-h-[172px] rounded-[20px] bg-contain object-fill"
           />{" "}
         </div>
         <div className="w-full">
           <div className="border-b-2 border-white text-white text-[14.4px] font-normal leading-[24px] pb-3 mb-2 text-left">
             {content}
+            {list && (
+              <>
+                {list.map((ls) => (
+                  <div className="mt-2 mb-2">
+                    <strong>{`${ls.T}: `}</strong>
+                    {ls.des}
+                  </div>
+                ))}
+              </>
+            )}
+            {others && others}
           </div>
           {details.map((detail, idx) => (
             <div
@@ -48,6 +67,17 @@ const AccordionContent = ({ content, details, image }: IProps) => {
         <div className="w-[50%]">
           <div className="border-b-2 border-white text-white text-[24px] font-normal leading-[40px] mb-3 pb-3">
             {content}
+            {list && (
+              <>
+                {list.map((ls) => (
+                  <div className="mt-2 mb-2">
+                    <strong>{`${ls.T}: `}</strong>
+                    {ls.des}
+                  </div>
+                ))}
+              </>
+            )}
+            {others && others}
           </div>
           {details.map((detail, idx) => (
             <div
@@ -76,7 +106,7 @@ const AccordionContent = ({ content, details, image }: IProps) => {
           <img
             src={image}
             alt="project image"
-            className="!w-[480px] !h-[328px] rounded-[20px] bg-contain"
+            className="!w-[480px] !max-h-[328px] rounded-[20px] bg-contain"
           />{" "}
         </div>
       </div>

@@ -37,11 +37,18 @@ const CarouselSectionHome = () => {
       </div>
       <div className="!mt-[100px] hidden lg:block">
         <Carousel autoplay className="!mt-[150px] !max-h-[490px] !p-0">
+          {/* <div className="">
+            <img
+              src="/digital_estate.png"
+              alt="Caroul image"
+              className="w-full !max-h-[490px] object-cover bg-cover object-center"
+            />
+          </div> */}
           <div className="">
             <img
-              src={cauroselImage}
+              src="/analysis.jpeg"
               alt="Caroul image"
-              className="w-full !max-h-[490px]"
+              className="w-full !max-h-[490px] object-cover bg-cover"
             />
           </div>
           <div>

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useLayoutEffect } from "react";
 import { Outlet } from "react-router-dom";
 import { Drawer } from "antd";
 import opendeskImage from "../assets/openDeskIcon.svg";
@@ -8,13 +8,34 @@ import { NavLink } from "react-router-dom";
 import { navItems } from "../data";
 import Footer from "./Footer";
 import { useCustomNavigation } from "../hook/useCustomNavigation";
+import { useLocation } from "react-router-dom";
 
 const MainNavigation = () => {
   const [openMenu, setOpenMenu] = useState(false);
+  const location = useLocation();
 
   const onClick = useCustomNavigation();
 
   const isMobile = useMobileView();
+
+  useLayoutEffect(() => {
+    // Scroll to the top of the page when the component mounts
+    window.scrollTo(0, 0);
+
+    // Optionally, you can also add an event listener to scroll to the top
+    // whenever the component is updated or re-rendered
+    const handleScroll = () => {
+      window.scrollTo(0, 0);
+    };
+
+    // Attach the event listener
+    window.addEventListener("scroll", handleScroll);
+
+    // Cleanup function to remove the event listener when the component is unmounted
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [location.pathname]);
 
   return (
     <>
