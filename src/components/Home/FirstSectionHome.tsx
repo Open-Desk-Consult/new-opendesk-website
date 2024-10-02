@@ -26,7 +26,7 @@ const FirstSectionHome = () => {
       </div>
 
       <div className="hidden !mt-[150px] lg:grid lg:grid-cols-5 items-start !px-[64px] animate-fade-down animate-once animate-ease-in">
-        <div className="col-span-3 font-[700px] text-[65px] leading-[74px]">
+        <div className="col-span-3 font-bold text-[65px] leading-[74px] text-[#142A49]">
           Devising digital solutions for smart brands to edge
         </div>
         <div className="col-span-2">

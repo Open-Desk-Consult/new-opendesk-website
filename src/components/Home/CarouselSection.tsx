@@ -1,13 +1,6 @@
 import { Carousel } from "antd";
 import cauroselImage from "../../assets/images/Frame 8.jpg";
-
-const imageArray = [
-  { key: "3", image: "/Group 155.svg" },
-  { key: "1", image: "/Group 153.svg" },
-  { key: "4", image: "/Group 156.svg" },
-  { key: "2", image: "/Group 154.svg" },
-  // { key: "5", image: "/Fictional group logo5.svg" },
-];
+import { imageArray } from "../../data";
 
 const CarouselSectionHome = () => {
   return (
@@ -37,13 +30,13 @@ const CarouselSectionHome = () => {
       </div>
       <div className="!mt-[100px] hidden lg:block">
         <Carousel autoplay className="!mt-[150px] !max-h-[490px] !p-0">
-          {/* <div className="">
+          <div className="">
             <img
               src="/digital_estate.png"
               alt="Caroul image"
               className="w-full !max-h-[490px] object-cover bg-cover object-center"
             />
-          </div> */}
+          </div>
           <div className="">
             <img
               src="/analysis.jpeg"

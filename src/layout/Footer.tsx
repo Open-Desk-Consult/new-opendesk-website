@@ -24,7 +24,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="flex flex-col items-start justify-start gap-y-8 !pt-7">
-          <div className="font-medium text-[12px] leading-[16px] text-[#FBFBFB]">
+          <div className="font-medium text-xl leading-[25px] text-[#FBFBFB]">
             info@opendeskng.com
           </div>
 
@@ -34,7 +34,7 @@ const Footer = () => {
                 <img
                   src={soc.logo}
                   alt={soc.name}
-                  className="w-[23px] h-[23px]"
+                  className="!w-[23px] !h-[23px]"
                 />
               </Link>
             ))}
@@ -66,7 +66,11 @@ const Footer = () => {
           <div className="flex items-center justify-center gap-x-4">
             {socialsLogo.map((soc) => (
               <Link to={soc.path} key={soc.name}>
-                <img src={soc.logo} alt={soc.name} />
+                <img
+                  src={soc.logo}
+                  alt={soc.name}
+                  className="!w-[50px] !h-[50px]"
+                />
               </Link>
             ))}
           </div>

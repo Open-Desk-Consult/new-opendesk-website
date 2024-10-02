@@ -33,10 +33,6 @@ const ServiceCard = ({ title, icon, info, onClick, hasBtn = true }: IProps) => {
             onClick={onClick}
           >
             Get started{" "}
-            <img
-              src="/circle-arrow-right-02-sharp.svg"
-              className="ml-2 hover:filter hover:brightness-0 hover:invert"
-            />
           </button>
         </div>
       )}

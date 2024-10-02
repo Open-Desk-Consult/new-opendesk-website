@@ -1,15 +1,18 @@
 import AccordionContent from "../components/AccordionContent";
 import type { CollapseProps } from "antd";
+import { useMobileView } from "./useMobileView";
 
 export const useAccordion = () => {
-  const genExtra = (year: string) => (
+  const isMobile = useMobileView();
+  const genExtra = (url: string) => (
     <>
-      <div className="flex justify-center items-center gap-x-3 mt-3 lg:mt-0">
-        <div className="w-10 border-b-[1px] border-white"></div>
-        <div className=" text-[15px] lg:text-[30px] font-normal leading-[25px] lg:leading-[50px] text-white">
-          {year}
+      {!isMobile ? (
+        <div className="flex justify-center items-center gap-x-3 lg:mt-0">
+          <div className=" text-[15px] lg:text-[30px] font-normal leading-[25px] lg:leading-[50px] text-white">
+            <img src={url} alt="Project logo" className="" />
+          </div>
         </div>
-      </div>
+      ) : null}
     </>
   );
 
@@ -17,7 +20,7 @@ export const useAccordion = () => {
     {
       key: "1",
       label: "zVerify",
-      extra: genExtra("2020"),
+      extra: genExtra("/zVerify_logo.svg"),
       children: (
         <AccordionContent
           content="
@@ -27,13 +30,8 @@ With its seamless integration and powerful monitoring capabilities, zVerify help
           image="/zVerify.png"
           details={[
             {
-              title: "Project scope",
-              desc: "Design and development",
-              icon: "/maze.svg",
-            },
-            {
               title: "Industry",
-              desc: "Business authentication service",
+              desc: "All Businesses (SMEs)",
               icon: "/building-06.svg",
             },
           ]}
@@ -44,7 +42,7 @@ With its seamless integration and powerful monitoring capabilities, zVerify help
     {
       key: "2",
       label: "Baya",
-      extra: genExtra("2023"),
+      extra: genExtra("/Baya_logo.svg"),
       children: (
         <AccordionContent
           content="
@@ -68,13 +66,8 @@ With its seamless integration and powerful monitoring capabilities, zVerify help
           image="/baya-1.png"
           details={[
             {
-              title: "Project scope",
-              desc: "Design and development",
-              icon: "/maze.svg",
-            },
-            {
               title: "Industry",
-              desc: "Estate management technology",
+              desc: "Real Estate",
               icon: "/building-06.svg",
             },
           ]}
@@ -85,7 +78,7 @@ With its seamless integration and powerful monitoring capabilities, zVerify help
     {
       key: "3",
       label: "Nottie",
-      extra: genExtra("2021"),
+      extra: genExtra("/Nottie_logo.svg"),
 
       children: (
         <AccordionContent
@@ -96,13 +89,8 @@ The solution includes an Analytic Dashboard that allows financial institutions t
       "
           details={[
             {
-              title: "Project scope",
-              desc: "Design and development",
-              icon: "/maze.svg",
-            },
-            {
               title: "Industry",
-              desc: "Transaction alert solution",
+              desc: "Financial Institution (Banks)",
               icon: "/building-06.svg",
             },
           ]}
@@ -114,7 +102,7 @@ The solution includes an Analytic Dashboard that allows financial institutions t
     {
       key: "4",
       label: "Bubo",
-      extra: genExtra("2020"),
+      extra: genExtra("/Bubo_logo.svg"),
       children: (
         <AccordionContent
           image="/Bubo_.png"
@@ -124,13 +112,8 @@ The solution is ideal for small to medium-sized enterprises looking to automate 
       "
           details={[
             {
-              title: "Project scope",
-              desc: "Design and development",
-              icon: "/maze.svg",
-            },
-            {
               title: "Industry",
-              desc: "Business finance management",
+              desc: "All Businesses (SMEs, Personal)",
               icon: "/building-06.svg",
             },
           ]}

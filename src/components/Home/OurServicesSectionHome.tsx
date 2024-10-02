@@ -22,6 +22,7 @@ const OurServicesSectionHome = () => {
                 title={service.title}
                 icon={service.icon}
                 info={service.info}
+                hasBtn={false}
               />
             </div>
           ))}
