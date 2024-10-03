@@ -15,7 +15,7 @@ export const iconSelector = (pathName: string) => {
 export const getHeaderByPath = (pathName: string) => {
   let policy = "";
   if (pathName === policies.termsOfUse) {
-    policy = "Terms of Us";
+    policy = "Terms of Use";
   }
   if (pathName === policies.dataPrivacy) {
     policy = "Data Privacy";

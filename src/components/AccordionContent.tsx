@@ -34,18 +34,25 @@ const AccordionContent = ({
           <div className="border-b-2 border-white text-white text-[14.4px] font-normal leading-[24px] pb-3 mb-2 text-left">
             {content}{" "}
             {termsOfService && (
-              <a href="/zverify/customer/terms-of-use">{termsOfService} |</a>
+              <a href="/zverify/customer/terms-of-use" target="_blank">
+                {termsOfService} |
+              </a>
             )}
             {dataPrivacy && (
               <>
                 {" "}
-                <a href="/zverify/customer/data-privacy">{dataPrivacy} | </a>
+                <a href="/zverify/customer/data-privacy" target="_blank">
+                  {dataPrivacy} |{" "}
+                </a>
               </>
             )}
             {supportPolicy && (
               <>
                 {" "}
-                <a href="/zverify/customer/support-policy"> {supportPolicy}</a>
+                <a href="/zverify/customer/support-policy" target="_blank">
+                  {" "}
+                  {supportPolicy}
+                </a>
               </>
             )}
             {list && (
