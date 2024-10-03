@@ -6,8 +6,10 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
+    "zip": "zip -r build.zip build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "bundle": "npm run build && rm -f build.zip && npm run zip",
+    "preview": "vite preview --port 3000"
   },
   "dependencies": {
     "@ant-design/icons": "^5.5.1",
