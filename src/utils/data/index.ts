@@ -93,3 +93,13 @@ export const imageArray = [
   { key: "4", image: "/Group 156.svg" },
   { key: "2", image: "/Group 154.svg" },
 ];
+
+export const policies: {
+  termsOfUse: string;
+  dataPrivacy: string;
+  supportPolicy: string;
+} = {
+  termsOfUse: "/zverify/customer/terms-of-use",
+  dataPrivacy: "/zverify/customer/data-privacy",
+  supportPolicy: "/zverify/customer/support-policy",
+};

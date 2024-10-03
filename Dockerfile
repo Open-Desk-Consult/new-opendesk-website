@@ -8,6 +8,6 @@ RUN npm install
 
 COPY . .
 
-RUN npm build
+EXPOSE 80
 
 CMD [ "npm", "preview" ]

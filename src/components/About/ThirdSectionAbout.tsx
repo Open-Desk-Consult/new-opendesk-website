@@ -1,5 +1,5 @@
 import ServiceCard from "../ServiceCard";
-import { aboutOpendesk } from "../../data";
+import { aboutOpendesk } from "../../utils/data";
 const ThirdSectionAbout = () => {
   return (
     <>

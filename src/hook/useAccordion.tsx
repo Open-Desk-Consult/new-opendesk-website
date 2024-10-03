@@ -20,14 +20,14 @@ export const useAccordion = () => {
     {
       key: "1",
       label: "zVerify",
-      extra: genExtra("/zVerify_logo.svg"),
+      extra: genExtra("/zVerify_logo_white.svg"),
       children: (
         <AccordionContent
           content="
             zVerify is a versatile OTP verification solution designed to provide businesses with secure, multi-channel authentication services. It features a comprehensive API for generating, verifying, and revoking OTPs, ensuring robust user security across SMS, voice calls, WhatsApp, RCS, and email. Additionally, zVerify offers an Admin Dashboard that enables businesses to monitor transactions, track OTP delivery, and analyze usage metrics in real-time.
 With its seamless integration and powerful monitoring capabilities, zVerify helps businesses enhance security, streamline customer interactions, and ensure a smooth verification experience.
           "
-          image="/zVerify.png"
+          image="/zVerify_dashboard.png"
           details={[
             {
               title: "Industry",
@@ -35,6 +35,9 @@ With its seamless integration and powerful monitoring capabilities, zVerify help
               icon: "/building-06.svg",
             },
           ]}
+          termsOfService="Terms of Use"
+          dataPrivacy="Data Privacy"
+          supportPolicy="Support Policy"
         />
       ),
       showArrow: false,
@@ -78,7 +81,7 @@ With its seamless integration and powerful monitoring capabilities, zVerify help
     {
       key: "3",
       label: "Nottie",
-      extra: genExtra("/Nottie_logo.svg"),
+      extra: genExtra("/nottie_logo_.svg"),
 
       children: (
         <AccordionContent

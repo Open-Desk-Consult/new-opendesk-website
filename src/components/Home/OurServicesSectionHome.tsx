@@ -1,4 +1,4 @@
-import { services } from "../../data";
+import { services } from "../../utils/data";
 import ServiceCard from "../ServiceCard";
 
 const OurServicesSectionHome = () => {

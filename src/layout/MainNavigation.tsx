@@ -1,83 +1,97 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Outlet } from "react-router-dom";
 import { Drawer } from "antd";
 import opendeskImage from "../assets/openDeskIcon.svg";
 import CustomButton from "../components/CustomButton";
 import { useMobileView } from "../hook/useMobileView";
 import { NavLink } from "react-router-dom";
-import { navItems } from "../data";
+import { navItems } from "../utils/data";
 import Footer from "./Footer";
 import { useCustomNavigation } from "../hook/useCustomNavigation";
-// import { useLocation } from "react-router-dom";
+import { useLocation } from "react-router-dom";
+import { policies } from "../utils/data";
+import { iconSelector, getHeaderByPath } from "../utils/helper_functions";
 
 const MainNavigation = () => {
   const [openMenu, setOpenMenu] = useState(false);
-  // const location = useLocation();
+  const location = useLocation();
+  const [isPolicies, setIsPolicies] = useState(false);
+
+  useEffect(() => {
+    if (
+      location.pathname === policies.termsOfUse ||
+      location.pathname === policies.dataPrivacy ||
+      location.pathname === policies.supportPolicy
+    ) {
+      setIsPolicies(true);
+    } else {
+      setIsPolicies(false);
+    }
+  }, [location.pathname]);
 
   const onClick = useCustomNavigation();
 
   const isMobile = useMobileView();
 
-  // useLayoutEffect(() => {
-  //   // Scroll to the top of the page when the component mounts
-  //   window.scrollTo(0, 0);
-
-  //   // Optionally, you can also add an event listener to scroll to the top
-  //   // whenever the component is updated or re-rendered
-  //   const handleScroll = () => {
-  //     window.scrollTo(0, 0);
-  //   };
-
-  //   // Attach the event listener
-  //   window.addEventListener("scroll", handleScroll);
-
-  //   // Cleanup function to remove the event listener when the component is unmounted
-  //   return () => {
-  //     window.removeEventListener("scroll", handleScroll);
-  //   };
-  // }, [location.pathname]);
-
   return (
     <>
       {!isMobile ? (
-        <div className="hidden lg:block">
-          <div className="!w-full flex items-center justify-between !pt-[18px] !px-[64px] z-50 fixed bg-white py-4">
-            <div>
-              <img src={opendeskImage} alt="open desk image" />
-            </div>
-
-            <div className="flex gap-x-4 items-center justify-center">
-              <div className="flex items-center justify-center gap-x-8">
-                {navItems?.map((nav) => (
-                  <NavLink
-                    to={nav?.key}
-                    key={nav?.key}
-                    onClick={() => {
-                      onClick(nav.key);
-                    }}
-                    className="!font-[500] !text-xl !leading-[25.52px] !text-black main-nav"
-                  >
-                    {nav.label}
-                  </NavLink>
-                ))}
-              </div>
-              <div className="ml-5">
-                <CustomButton
-                  btnText="Contact us"
-                  onClick={() => {
-                    onClick("/about-us");
-                  }}
-                  className="uppercase"
+        <>
+          {" "}
+          <div className="hidden lg:block">
+            <div className="!w-full flex items-center justify-between !pt-[18px] !px-[64px] z-50 fixed bg-white py-4">
+              <div>
+                <img
+                  src={iconSelector(location.pathname)}
+                  alt="open desk image"
                 />
               </div>
+              {location.pathname !== policies.termsOfUse &&
+                location.pathname !== policies.dataPrivacy &&
+                location.pathname !== policies.supportPolicy && (
+                  <div className="flex gap-x-4 items-center justify-center">
+                    <>
+                      {" "}
+                      <div className="flex items-center justify-center gap-x-8">
+                        {navItems?.map((nav) => (
+                          <NavLink
+                            to={nav?.key}
+                            key={nav?.key}
+                            onClick={() => {
+                              onClick(nav.key);
+                            }}
+                            className="!font-[500] !text-xl !leading-[25.52px] !text-black main-nav"
+                          >
+                            {nav.label}
+                          </NavLink>
+                        ))}
+                      </div>
+                      <div className="ml-5">
+                        <CustomButton
+                          btnText="Contact us"
+                          onClick={() => {
+                            onClick("/about-us");
+                          }}
+                          className="uppercase"
+                        />
+                      </div>
+                    </>
+                  </div>
+                )}
+
+              {isPolicies && (
+                <div className="!font-[500] !text-xl !leading-[25.52px] !text-black main-nav">
+                  {getHeaderByPath(location.pathname)}
+                </div>
+              )}
+            </div>
+
+            <div className="pt-[18px] w-screen h-screen overflow-y-scroll hide-scrollbar">
+              <Outlet />
+              <Footer />
             </div>
           </div>
-
-          <div className="pt-[18px] w-screen h-screen overflow-y-scroll hide-scrollbar">
-            <Outlet />
-            <Footer />
-          </div>
-        </div>
+        </>
       ) : (
         <div className="z-50 mt-4 p-3">
           <Drawer

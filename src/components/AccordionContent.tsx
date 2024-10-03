@@ -6,6 +6,9 @@ interface IProps {
   year?: string;
   list?: { T: string; des: string }[];
   others?: string;
+  termsOfService?: string;
+  dataPrivacy?: string;
+  supportPolicy?: string;
 }
 const AccordionContent = ({
   content,
@@ -13,6 +16,9 @@ const AccordionContent = ({
   image,
   others,
   list,
+  termsOfService,
+  dataPrivacy,
+  supportPolicy,
 }: IProps) => {
   return (
     <>
@@ -26,7 +32,22 @@ const AccordionContent = ({
         </div>
         <div className="w-full">
           <div className="border-b-2 border-white text-white text-[14.4px] font-normal leading-[24px] pb-3 mb-2 text-left">
-            {content}
+            {content}{" "}
+            {termsOfService && (
+              <a href="/zverify/customer/terms-of-use">{termsOfService} |</a>
+            )}
+            {dataPrivacy && (
+              <>
+                {" "}
+                <a href="/zverify/customer/data-privacy">{dataPrivacy} | </a>
+              </>
+            )}
+            {supportPolicy && (
+              <>
+                {" "}
+                <a href="/zverify/customer/support-policy"> {supportPolicy}</a>
+              </>
+            )}
             {list && (
               <>
                 {list.map((ls) => (
@@ -67,6 +88,19 @@ const AccordionContent = ({
         <div className="w-[50%]">
           <div className="border-b-2 border-white text-white text-[24px] font-normal leading-[40px] mb-3 pb-3">
             {content}
+            {termsOfService && (
+              <a href="/zverify/customer/terms-of-use">{termsOfService} |</a>
+            )}
+            {dataPrivacy && (
+              <>
+                {" "}
+                <a href="/zverify/customer/data-privacy">{dataPrivacy} |</a>
+              </>
+            )}
+
+            {supportPolicy && (
+              <a href="/zverify/customer/support-policy">{supportPolicy}</a>
+            )}
             {list && (
               <>
                 {list.map((ls) => (

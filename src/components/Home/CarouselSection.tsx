@@ -1,6 +1,6 @@
 import { Carousel } from "antd";
 import cauroselImage from "../../assets/images/Frame 8.jpg";
-import { imageArray } from "../../data";
+import { imageArray } from "../../utils/data";
 
 const CarouselSectionHome = () => {
   return (
